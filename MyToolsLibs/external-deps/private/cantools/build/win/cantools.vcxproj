@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\aes\aes.h" />
+    <ClInclude Include="..\..\include\aes\aestab.h" />
+    <ClInclude Include="..\..\include\aes\aes_options.h" />
+    <ClInclude Include="..\..\include\jsoncpp\json\autolink.h" />
+    <ClInclude Include="..\..\include\jsoncpp\json\config.h" />
+    <ClInclude Include="..\..\include\jsoncpp\json\features.h" />
+    <ClInclude Include="..\..\include\jsoncpp\json\forwards.h" />
+    <ClInclude Include="..\..\include\jsoncpp\json\json.h" />
+    <ClInclude Include="..\..\include\jsoncpp\json\reader.h" />
+    <ClInclude Include="..\..\include\jsoncpp\json\value.h" />
+    <ClInclude Include="..\..\include\jsoncpp\json\writer.h" />
+    <ClInclude Include="..\..\include\macro.h" />
+    <ClInclude Include="..\..\include\md5\md5.h" />
+    <ClInclude Include="..\..\include\rapidjson\allocators.h" />
+    <ClInclude Include="..\..\include\rapidjson\document.h" />
+    <ClInclude Include="..\..\include\rapidjson\encodedstream.h" />
+    <ClInclude Include="..\..\include\rapidjson\encodings.h" />
+    <ClInclude Include="..\..\include\rapidjson\filereadstream.h" />
+    <ClInclude Include="..\..\include\rapidjson\filestream.h" />
+    <ClInclude Include="..\..\include\rapidjson\filewritestream.h" />
+    <ClInclude Include="..\..\include\rapidjson\internal\pow10.h" />
+    <ClInclude Include="..\..\include\rapidjson\internal\stack.h" />
+    <ClInclude Include="..\..\include\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="..\..\include\rapidjson\prettywriter.h" />
+    <ClInclude Include="..\..\include\rapidjson\rapidjson.h" />
+    <ClInclude Include="..\..\include\rapidjson\reader.h" />
+    <ClInclude Include="..\..\include\rapidjson\stringbuffer.h" />
+    <ClInclude Include="..\..\include\rapidjson\writer.h" />
+    <ClInclude Include="..\..\include\tools.h" />
+    <ClInclude Include="..\..\source\jsoncpp\libjson\json_batchallocator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\include\aes\aes_crypt.c" />
+    <ClCompile Include="..\..\include\aes\aes_setkey.c" />
+    <ClCompile Include="..\..\include\aes\aes_tables.c" />
+    <ClCompile Include="..\..\source\code.cpp" />
+    <ClCompile Include="..\..\source\encrypt.cpp" />
+    <ClCompile Include="..\..\source\files.cpp" />
+    <ClCompile Include="..\..\source\hardwareinfo.cpp" />
+    <ClCompile Include="..\..\source\jsoncpp\libjson\json_reader.cpp" />
+    <ClCompile Include="..\..\source\jsoncpp\libjson\json_value.cpp" />
+    <ClCompile Include="..\..\source\jsoncpp\libjson\json_writer.cpp" />
+    <ClCompile Include="..\..\source\lineIntersection.cpp" />
+    <ClCompile Include="..\..\source\md5\md5.c" />
+    <ClCompile Include="..\..\source\random.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\source\jsoncpp\libjson\json_internalarray.inl" />
+    <None Include="..\..\source\jsoncpp\libjson\json_internalmap.inl" />
+    <None Include="..\..\source\jsoncpp\libjson\json_valueiterator.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>cantools</ProjectName>
+    <ProjectGuid>{FC9A2BAD-DEC5-452D-B7B4-E276F2BFB735}</ProjectGuid>
+    <RootNamespace>SqliteDatabase</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\Obj\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\Obj\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>../../include;../../include/jsoncpp</AdditionalIncludeDirectories>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)..\..\out" 
+copy /y "$(TargetDir)$(TargetFileName)" "$(SolutionDir)..\..\out\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>../../include;../../include/jsoncpp</AdditionalIncludeDirectories>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)..\..\out" 
+copy /y "$(TargetDir)$(TargetFileName)" "$(SolutionDir)..\..\out\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

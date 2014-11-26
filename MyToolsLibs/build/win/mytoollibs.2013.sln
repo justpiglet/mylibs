@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cantools", "..\..\external-deps\private\cantools\build\win\cantools.vcxproj", "{FC9A2BAD-DEC5-452D-B7B4-E276F2BFB735}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SqliteDatabase", "..\..\external-deps\private\sqlitedb\build\win\SqliteDatabase.vcxproj", "{B0EB087C-C56D-4097-AA8D-A0FD90CC6DCA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bzip2", "..\..\external-deps\private\bzip2\build\win\bzip2.vcxproj", "{BBE3CDA9-A081-4267-ADAD-3E253B68CBC9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZLib", "..\..\external-deps\private\zlib\build\win\ZLib.vcxproj", "{D9FF0CDA-FE3F-43D5-B8B9-C27A5BD00E18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC9A2BAD-DEC5-452D-B7B4-E276F2BFB735}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC9A2BAD-DEC5-452D-B7B4-E276F2BFB735}.Debug|Win32.Build.0 = Debug|Win32
+		{FC9A2BAD-DEC5-452D-B7B4-E276F2BFB735}.Release|Win32.ActiveCfg = Release|Win32
+		{FC9A2BAD-DEC5-452D-B7B4-E276F2BFB735}.Release|Win32.Build.0 = Release|Win32
+		{B0EB087C-C56D-4097-AA8D-A0FD90CC6DCA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B0EB087C-C56D-4097-AA8D-A0FD90CC6DCA}.Debug|Win32.Build.0 = Debug|Win32
+		{B0EB087C-C56D-4097-AA8D-A0FD90CC6DCA}.Release|Win32.ActiveCfg = Release|Win32
+		{B0EB087C-C56D-4097-AA8D-A0FD90CC6DCA}.Release|Win32.Build.0 = Release|Win32
+		{BBE3CDA9-A081-4267-ADAD-3E253B68CBC9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BBE3CDA9-A081-4267-ADAD-3E253B68CBC9}.Debug|Win32.Build.0 = Debug|Win32
+		{BBE3CDA9-A081-4267-ADAD-3E253B68CBC9}.Release|Win32.ActiveCfg = Release|Win32
+		{BBE3CDA9-A081-4267-ADAD-3E253B68CBC9}.Release|Win32.Build.0 = Release|Win32
+		{D9FF0CDA-FE3F-43D5-B8B9-C27A5BD00E18}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D9FF0CDA-FE3F-43D5-B8B9-C27A5BD00E18}.Debug|Win32.Build.0 = Debug|Win32
+		{D9FF0CDA-FE3F-43D5-B8B9-C27A5BD00E18}.Release|Win32.ActiveCfg = Release|Win32
+		{D9FF0CDA-FE3F-43D5-B8B9-C27A5BD00E18}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
